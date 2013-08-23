@@ -1,0 +1,121 @@
+[iZug Internet Workflow]
+Initial Status: Sichtbar
+
+Role mapping:
+    Ersteller => Owner
+    Gast => Reader
+    Benutzer => Contributor
+    Redakteur => Editor
+    Korrektor => Reviewer
+    Internetbenutzer => Anonymous
+    Webmaster => Site Administrator
+    System Administrator => Manager
+
+Transitions:
+
+#Sichtbar
+    intern publizieren (Sichtbar => Intern)
+    publizieren (Sichtbar => Publiziert)
+    einreichen (Sichtbar => Eingereicht)
+
+#Eingereicht
+    intern publizieren (Eingereicht => Intern)
+    publizieren (Eingereicht => Publiziert)
+    zurückziehen (Eingereicht => Sichtbar)
+    Zurückweisen (Eingereicht => Sichtbar)
+
+#Publiziert
+    zurückweisen (publiziert => Sichtbar)
+    zurückziehen (publiziert => Sichtbar)
+
+#Intern
+    publizieren (Intern => Publiziert)
+    einreichen (Intern => Eingereicht)
+    zurückweisen (Intern => Sichtbar)
+    zurückziehen (Intern => Sichtbar)
+
+General:
+    A Redakteur can always perform the same actions as an Benutzer.
+    A Ersteller can always perform the same actions as an Benutzer.
+    A Webmaster can always perform the same actions as an Ersteller.
+    A Webmaster can always perform the same actions as an Gast.
+    A Webmaster can always perform the same actions as an Benutzer.
+    A Webmaster can always perform the same actions as an Redakteur.
+    A Webmaster can always perform the same actions as an Korrektor.
+    A Webmaster can always perform the same actions as an Internetbenutzer.    
+    A Webmaster can always view any content.
+    A Webmaster can always add subsite.
+    A Webmaster can always view inactive objects.
+    A Webmaster can always manage security.
+    A Webmaster can always manage portlets.
+    A Webmaster can delegate webmaster role.
+
+    A System Administrator can always perform the same actions as a Webmaster.
+    A System Administrator can always edit any content.
+    A System Administrator can always delete any content.
+    A System Administrator can always manage content settings.
+    A System Administrator can always manage.
+
+Status Sichtbar:
+    A Ersteller can view this content.
+    A Ersteller can add new content.
+    A Ersteller can view inactive objects.
+    A Ersteller can edit this content.
+    A Ersteller can delete this content.
+    A Redakteur can view.
+    A Redakteur can add new content.
+    A Redakteur can edit this content.
+    A Korrektor can publizieren.
+    A Redakteur can intern publizieren.
+    A Korrektor can intern publizieren.
+    A Redakteur can einreichen.
+    A Korrektor can einreichen.
+    
+Status Intern:
+    A Benutzer can view this content.
+    A Benutzer can add new content.
+    A Gast can view this content.
+    A Korrektor can view this content.
+    A Korrektor can view inactive objects.
+    A Korrektor can edit this content.
+    A Redakteur can edit this content.
+    A Korrektor can delete this content.
+    A Ersteller can delete this content.
+    A Ersteller can add new content.
+    A Ersteller can edit this content.
+    A Ersteller can view inactive objects.
+    A Korrektor can publizieren.
+    A Redakteur can einreichen.
+    A Korrektor can einreichen.
+    A Korrektor can zurückweisen.
+    A Ersteller can retract.
+    A Redakteur can retract.
+    A Korrektor can retract.
+
+Status Eingereicht:
+    A Benutzer can view this content.
+    A Korrektor can view this content.
+    A Korrektor can view inactive objects.
+    A Korrektor can edit this content.
+    A Korrektor can delete this content.
+    A Korrektor can publizieren.
+    A Redakteur can intern publizieren.
+    A Korrektor can intern publizieren.
+    A Korrektor can zurückweisen.
+    A Ersteller can retract.
+    A Redakteur can retract.
+    A Korrektor can retract.
+
+Status Publiziert:
+    A Internetbenutzer can view this content.
+    A Benutzer can view this content.
+    A Korrektor can view this content.
+    A Korrektor can view inactive objects.
+    A Korrektor can delete this content.
+    A Redakteur can add new content.
+    A Redakter can view this content.
+    A Korrektor can zurückweisen.
+    A Ersteller can zurückziehen.
+    A Redakteur can zurückziehen.
+    A Korrektor can zurückziehen.
+    
