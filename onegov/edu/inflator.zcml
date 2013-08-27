@@ -5,17 +5,13 @@
     i18n_domain="onegov.edu">
 
     <include package="ftw.inflator" />
-    <inflator:customize
-        product="OneGov Box Municipality"
-        image="browser/resources/onegovbox_rgb.png"
-        />
 
     <inflator:bundle
-        title="OneGov Box Municipality (empty)"
+        title="OneGov Box EDU (empty)"
         description="Setup an empty OneGov Box for development"
         profiles="ftw.inflator:setup-language
                   onegov.edu:default
-                  plonetheme.onegov:default"
+                  plonetheme.teamraum:default"
         standard="True"
         />
 </configure>

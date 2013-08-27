@@ -6,6 +6,7 @@ version = '1.0.dev0'
 tests_require = [
     'ftw.lawgiver [tests]',
     'plone.app.testing',
+    'Products.PloneFormGen'
     ]
 
 setup(name='onegov.edu',
@@ -37,10 +38,12 @@ setup(name='onegov.edu',
         'Plone',
         'ftw.inflator',
         'ftw.contentpage',
+        'simplelayout.types.common',
         'simplelayout.types.flowplayerblock',
         'Products.PloneFormGen',
         'ftw.calendar',
         'ftw.lawgiver',
+	    'plonetheme.teamraum',
         # -*- Extra requirements: -*-
         ],
         
