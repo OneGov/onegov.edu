@@ -43,7 +43,7 @@ setup(name='onegov.edu',
         'Products.PloneFormGen',
         'ftw.calendar',
         'ftw.lawgiver',
-	    'plonetheme.teamraum',
+        'plonetheme.onegov'
         # -*- Extra requirements: -*-
         ],
         

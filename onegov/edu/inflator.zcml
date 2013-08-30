@@ -11,7 +11,7 @@
         description="Setup an empty OneGov Box for development"
         profiles="ftw.inflator:setup-language
                   onegov.edu:default
-                  plonetheme.teamraum:default"
+                  plonetheme.onegov:default"
         standard="True"
         />
 </configure>
