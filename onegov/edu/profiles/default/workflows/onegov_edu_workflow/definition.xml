@@ -54,6 +54,8 @@
   <permission>ftw.contentpage: Edit teaser image on ContentPage</permission>
   <permission>ftw.contentpage: Edit teaser image on EventPage</permission>
   <permission>ftw.contentpage: Edit teaser image on News</permission>
+  <permission>ftw.slider: Add Container</permission>
+  <permission>ftw.slider: Add Pane</permission>
   <permission>iterate : Check in content</permission>
   <permission>iterate : Check out content</permission>
   <permission>plone.app.collection: Add Collection</permission>
@@ -251,6 +253,8 @@
       <permission-role>Reviewer</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
+    <permission-map name="ftw.slider: Add Container" acquired="False"/>
+    <permission-map name="ftw.slider: Add Pane" acquired="False"/>
     <permission-map name="iterate : Check in content" acquired="False">
       <permission-role>Manager</permission-role>
       <permission-role>Reviewer</permission-role>
@@ -619,6 +623,20 @@
       <permission-role>Reviewer</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
+    <permission-map name="ftw.slider: Add Container" acquired="False">
+      <permission-role>Contributor</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="ftw.slider: Add Pane" acquired="False">
+      <permission-role>Contributor</permission-role>
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
     <permission-map name="iterate : Check in content" acquired="False">
       <permission-role>Editor</permission-role>
       <permission-role>Manager</permission-role>
@@ -962,6 +980,18 @@
       <permission-role>Owner</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
+    <permission-map name="ftw.slider: Add Container" acquired="False">
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="ftw.slider: Add Pane" acquired="False">
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Owner</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
     <permission-map name="iterate : Check in content" acquired="False">
       <permission-role>Editor</permission-role>
       <permission-role>Manager</permission-role>
@@ -1229,6 +1259,16 @@
     </permission-map>
     <permission-map name="ftw.contentpage: Edit teaser image on News" acquired="False">
       <permission-role>Manager</permission-role>
+    </permission-map>
+    <permission-map name="ftw.slider: Add Container" acquired="False">
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
+    </permission-map>
+    <permission-map name="ftw.slider: Add Pane" acquired="False">
+      <permission-role>Editor</permission-role>
+      <permission-role>Manager</permission-role>
+      <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="iterate : Check in content" acquired="False">
       <permission-role>Manager</permission-role>
