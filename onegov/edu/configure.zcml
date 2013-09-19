@@ -6,9 +6,9 @@
     i18n_domain="onegov.edu">
 
     <include package="zope.component" file="meta.zcml" />
-    
+
     <includeDependencies package="." />
-    
+
     <genericsetup:registerProfile
         name="default"
         title="onegov.edu"
@@ -18,5 +18,12 @@
         />
      <include file="inflator.zcml" />
      <include file="lawgiver.zcml" />
-     
+
+    <genericsetup:importStep
+        name="onegov.edu"
+        title="OneGov Edu default special import handlers"
+        description=""
+        handler="onegov.edu.setuphandlers.import_various"
+        />
+
 </configure>
