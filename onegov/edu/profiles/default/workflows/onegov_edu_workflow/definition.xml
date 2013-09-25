@@ -677,8 +677,6 @@
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--intern-publizieren--intern_extern"/>
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--publizieren--intern_publiziert"/>
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--einreichen--intern_eingereicht"/>
-    <exit-transition transition_id="onegov_edu_workflow--TRANSITION--publizieren--intern_publiziert"/>
-    <exit-transition transition_id="onegov_edu_workflow--TRANSITION--einreichen--intern_eingereicht"/>
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--zuruckweisen--intern_intern"/>
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--zuruckziehen--intern_intern"/>
     <permission-map name="ATContentTypes: Add Document" acquired="False">
@@ -1304,22 +1302,6 @@
       <guard-role>Site Administrator</guard-role>
     </guard>
   </transition>
-  <transition new_state="onegov_edu_workflow--STATUS--eingereicht" title="einreichen" transition_id="onegov_edu_workflow--TRANSITION--einreichen--intern_eingereicht" after_script="" before_script="" trigger="USER">
-    <action category="workflow" icon="" url="%(content_url)s/content_status_modify?workflow_action=onegov_edu_workflow--TRANSITION--einreichen--intern_eingereicht">einreichen</action>
-    <guard>
-      <guard-role>Editor</guard-role>
-      <guard-role>Manager</guard-role>
-      <guard-role>Site Administrator</guard-role>
-    </guard>
-  </transition>
-  <transition new_state="onegov_edu_workflow--STATUS--extern" title="intern publizieren" transition_id="onegov_edu_workflow--TRANSITION--intern-publizieren--intern_extern" after_script="" before_script="" trigger="USER">
-    <action category="workflow" icon="" url="%(content_url)s/content_status_modify?workflow_action=onegov_edu_workflow--TRANSITION--intern-publizieren--intern_extern">intern publizieren</action>
-    <guard>
-      <guard-role>Editor</guard-role>
-      <guard-role>Manager</guard-role>
-      <guard-role>Site Administrator</guard-role>
-    </guard>
-  </transition>
   <transition new_state="onegov_edu_workflow--STATUS--extern" title="intern publizieren" transition_id="onegov_edu_workflow--TRANSITION--intern-publizieren--eingereicht_extern" after_script="" before_script="" trigger="USER">
     <action category="workflow" icon="" url="%(content_url)s/content_status_modify?workflow_action=onegov_edu_workflow--TRANSITION--intern-publizieren--eingereicht_extern">intern publizieren</action>
     <guard>
@@ -1329,11 +1311,11 @@
       <guard-role>Site Administrator</guard-role>
     </guard>
   </transition>
-  <transition new_state="onegov_edu_workflow--STATUS--publiziert" title="publizieren" transition_id="onegov_edu_workflow--TRANSITION--publizieren--intern_publiziert" after_script="" before_script="" trigger="USER">
-    <action category="workflow" icon="" url="%(content_url)s/content_status_modify?workflow_action=onegov_edu_workflow--TRANSITION--publizieren--intern_publiziert">publizieren</action>
+  <transition new_state="onegov_edu_workflow--STATUS--extern" title="intern publizieren" transition_id="onegov_edu_workflow--TRANSITION--intern-publizieren--intern_extern" after_script="" before_script="" trigger="USER">
+    <action category="workflow" icon="" url="%(content_url)s/content_status_modify?workflow_action=onegov_edu_workflow--TRANSITION--intern-publizieren--intern_extern">intern publizieren</action>
     <guard>
+      <guard-role>Editor</guard-role>
       <guard-role>Manager</guard-role>
-      <guard-role>Reviewer</guard-role>
       <guard-role>Site Administrator</guard-role>
     </guard>
   </transition>

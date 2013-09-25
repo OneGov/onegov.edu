@@ -13,11 +13,6 @@ Role mapping:
 
 Transitions:
 
-#Intern
-    intern publizieren (Intern => Extern)
-    publizieren (Intern => Publiziert)
-    einreichen (Intern => Eingereicht)
-
 #Eingereicht
     intern publizieren (Eingereicht => Extern)
     publizieren (Eingereicht => Publiziert)
@@ -29,6 +24,7 @@ Transitions:
     zurückziehen (Publiziert => Intern)
 
 #Intern
+    intern publizieren (Intern => Extern)
     publizieren (Intern => Publiziert)
     einreichen (Intern => Eingereicht)
     zurückweisen (Intern => Intern)
