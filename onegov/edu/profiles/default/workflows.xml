@@ -2,6 +2,7 @@
 <object name="portal_workflow" meta_type="Plone Workflow Tool">
 
     <object name="onegov_edu_workflow" meta_type="Workflow"/>
+    <object name="onegov_edu_intranet_workflow" meta_type="Workflow"/>
 
     <bindings>
         <default>
