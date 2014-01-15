@@ -14,4 +14,13 @@
                   plonetheme.onegov:default"
         standard="True"
         />
+
+    <inflator:bundle
+        title="OneGov Box EDU (With content)"
+        description="Setup onegov.edu with init content"
+        profiles="ftw.inflator:setup-language
+                  onegov.edu:init
+                  plonetheme.onegov:default"
+        standard="True"
+        />
 </configure>
