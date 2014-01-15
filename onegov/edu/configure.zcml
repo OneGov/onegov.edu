@@ -16,6 +16,15 @@
         description=""
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
+
+    <genericsetup:registerProfile
+        name="init"
+        title="onegov.edu:init"
+        directory="profiles/init"
+        description=""
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
      <include file="inflator.zcml" />
      <include file="lawgiver.zcml" />
 
