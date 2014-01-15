@@ -1,0 +1,25 @@
+[
+
+    {
+      "_path": "impressum",
+      "_type": "ContentPage",
+      "title": "Impressum",
+      "_children": [
+
+              {"_id": "impressum_block",
+               "_type": "TextBlock",
+               "title": "Impressum (Block)",
+               "showTitle": false,
+               "text": "<p>Bitt hier das Impressum hizufügen</p>"
+               },
+
+              {"_id": "impressum_block2",
+               "_type": "TextBlock",
+               "title": "Impressum (Block 2)",
+               "showTitle": false,
+               "text": "<p><strong>Realisierung und Design:</strong><br></b>4teamwork - Internetbasierte Zusammenarbeit&nbsp;<br><a href='http://www.4teamwork.ch' target='_blank'>www.4teamwork.ch</a><br><a href='http://www.onegov.ch' target='_blank'>Verein OneGov</a></p>"
+               }
+            ]
+    }
+
+]
