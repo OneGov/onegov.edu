@@ -31,5 +31,8 @@
  <assignment name="news-archive-portlet" category="context" key="/"
     manager="plone.rightcolumn" type="newsarchiveportlet" visible="True"/>
 
+ <assignment name="calendar" category="context" key="/termine"
+    manager="plone.rightcolumn" type="portlets.Calendar" visible="True"/>
+
 
 </portlets>
