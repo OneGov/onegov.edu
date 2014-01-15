@@ -4,6 +4,7 @@
       "_path": "impressum",
       "_type": "ContentPage",
       "title": "Impressum",
+      "excludeFromNav": true,
       "_children": [
 
               {"_id": "impressum_block",
