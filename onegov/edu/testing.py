@@ -19,9 +19,9 @@ class OneGovEDULayer(PloneSandboxLayer):
             '</configure>',
             context=configurationContext)
 
-
         z2.installProduct(app, 'ftw.contentpage')
         z2.installProduct(app, 'simplelayout.types.common')
+        z2.installProduct(app, 'ftw.subsite')
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'onegov.edu:default')
