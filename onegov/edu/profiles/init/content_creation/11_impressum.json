@@ -11,7 +11,7 @@
                "_type": "TextBlock",
                "title": "Impressum (Block)",
                "showTitle": false,
-               "text": "<p>Bitt hier das Impressum hizufügen</p>"
+               "text": "<p>Bitte hier das Impressum hinzufügen</p>"
                },
 
               {"_id": "impressum_block2",
