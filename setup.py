@@ -35,6 +35,7 @@ setup(name='onegov.edu',
       zip_safe=False,
 
       install_requires=[
+	'setuptools',
         'Plone',
         'ftw.inflator',
         'ftw.contentpage',
