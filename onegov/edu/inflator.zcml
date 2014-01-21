@@ -6,6 +6,11 @@
 
     <include package="ftw.inflator" />
 
+    <inflator:customize
+        product="OneGov Box EDU"
+        image="browser/resources/logo_onegov.png"
+        />
+
     <inflator:bundle
         title="OneGov Box EDU (empty)"
         description="Setup an empty OneGov Box for development"
