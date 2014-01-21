@@ -10,6 +10,7 @@
         <element value="Folder" />
         <element value="FormFolder" />
         <element value="ftw.slider.Container" />
+        <element value="NewsFolder" />
     </property>
 
 </object>
