@@ -14,6 +14,21 @@
   <property name="footer"/>
  </assignment>
 
+ <assignment name="navigation"
+             category="context"
+             key="/"
+             manager="plone.leftcolumn"
+             type="portlets.Navigation">
+     <property name="topLevel">0</property>
+     <property name="currentFolderOnly">True</property>
+     <property name="name"/>
+     <property name="includeTop">False</property>
+     <property name="bottomLevel">3</property>
+ </assignment>
+
+ <blacklist category="context" location="/welcome" manager="plone.leftcolumn"
+     status="block"/>
+
  <assignment name="news-portlet" category="context" key="/"
     manager="plone.rightcolumn" type="newsportlet" visible="True">
   <property name="classification_items"/>
