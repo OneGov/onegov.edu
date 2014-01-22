@@ -8,5 +8,7 @@
       <dependency>profile-Products.PloneFormGen:default</dependency>
       <dependency>profile-ftw.calendar:default</dependency>
       <dependency>profile-ftw.subsite:default</dependency>
+      <dependency>profile-Products.CMFPlacefulWorkflow:CMFPlacefulWorkflow</dependency>
+      <dependency>profile-ftw.slider:default</dependency>
     </dependencies>
 </metadata>

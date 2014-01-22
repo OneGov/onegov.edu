@@ -37,6 +37,7 @@ setup(name='onegov.edu',
       install_requires=[
 	'setuptools',
         'Plone',
+        'Products.CMFPlacefulWorkflow',
         'ftw.inflator',
         'ftw.contentpage',
         'simplelayout.types.common',
@@ -45,7 +46,8 @@ setup(name='onegov.edu',
         'ftw.calendar',
         'ftw.lawgiver',
         'plonetheme.onegov',
-        'ftw.subsite'
+        'ftw.subsite',
+        'ftw.slider'
         # -*- Extra requirements: -*-
         ],
 
