@@ -4,7 +4,6 @@
       "_path": "welcome",
       "_type": "ContentPage",
       "title": "Willkommen",
-      "description": "Willkommen bei onegov.edu",
       "_children": [
 
               {"_id": "welcome_block",
