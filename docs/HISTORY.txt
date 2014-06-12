@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.1 (unreleased)
-----------------
+1.0.1 (2014-06-12)
+------------------
 
 - Remove unused Page and Paragraph from onegovedu_workflow_policy
   [elioschmutz]
