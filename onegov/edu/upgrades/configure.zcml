@@ -14,4 +14,21 @@
         directory="profiles/1001"
         />
 
+    <genericsetup:registerProfile
+        name="1002"
+        title="Fix OneGov EDU Internet Workflow"
+        description=""
+        directory="profiles/1002"
+        />
+
+    <!-- 1001 -> 1002 -->
+    <genericsetup:upgradeStep
+        title="Fix OneGov EDU Internet Workflow"
+        description=""
+        source="1001"
+        destination="1002"
+        handler="onegov.edu.upgrades.to1002.FixInternetWorkflow"
+        profile="onegov.edu:default"
+        />
+
 </configure>

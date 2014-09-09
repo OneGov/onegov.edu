@@ -42,7 +42,7 @@ General:
     A Webmaster can always perform the same actions as an Benutzer.
     A Webmaster can always perform the same actions as an Redakteur.
     A Webmaster can always perform the same actions as an Korrektor.
-    A Webmaster can always perform the same actions as an Internetbenutzer.    
+    A Webmaster can always perform the same actions as an Internetbenutzer.
     A Webmaster can always view any content.
     A Webmaster can always view inactive objects.
     A Webmaster can always manage security.
@@ -63,10 +63,11 @@ Status Intern:
     A Redakteur can view.
     A Redakteur can add new content.
     A Redakteur can edit this content.
+    A Redakteur can delete this content.
     A Korrektor can publizieren.
     A Redakteur can intern publizieren.
     A Redakteur can einreichen.
-    
+
 Status Extern:
     A Benutzer can view this content.
     A Benutzer can add new content.
@@ -114,4 +115,4 @@ Status Publiziert:
     A Ersteller can zurückziehen.
     A Redakteur can zurückziehen.
     A Korrektor can zurückziehen.
-    
+
