@@ -31,4 +31,9 @@
         profile="onegov.edu:default"
         />
 
+    <upgrade-step:directory
+        profile="onegov.edu:default"
+        directory="."
+        />
+
 </configure>

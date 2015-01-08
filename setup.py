@@ -35,24 +35,24 @@ setup(name='onegov.edu',
       zip_safe=False,
 
       install_requires=[
-	'setuptools',
         'Plone',
         'Products.CMFPlacefulWorkflow',
-        'ftw.inflator',
-        'ftw.contentpage',
-        'simplelayout.types.common',
-        'simplelayout.types.flowplayerblock',
         'Products.PloneFormGen',
         'ftw.calendar',
+        'ftw.contentpage',
+        'ftw.inflator',
         'ftw.lawgiver',
-        'plonetheme.onegov',
+        'ftw.slider',
         'ftw.subsite',
-        'ftw.slider'
-        # -*- Extra requirements: -*-
+        'ftw.upgrade >= 1.11.0',
+        'plonetheme.onegov',
+        'setuptools',
+        'simplelayout.types.common',
+        'simplelayout.types.flowplayerblock',
         ],
 
-        tests_require=tests_require,
-                extras_require=dict(tests=tests_require),
+      tests_require=tests_require,
+      extras_require=dict(tests=tests_require),
 
       entry_points="""
       # -*- Entry points: -*-
