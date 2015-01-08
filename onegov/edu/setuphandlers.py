@@ -4,7 +4,7 @@ from simplelayout.base.configlet.interfaces import ISimplelayoutConfiguration
 
 SL_CONFIGURATION = {
     'same_workflow': False,
-    'show_design_tab' : True,
+    'show_design_tab': True,
     'small_size': 124,
     'middle_size': 262,
     'full_size': 537,
