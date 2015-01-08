@@ -4,7 +4,8 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update workflows for Plone 4.3.4.
+  [jone]
 
 
 1.0.3 (2014-09-10)
