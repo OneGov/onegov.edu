@@ -35,11 +35,12 @@ General:
     A Webmaster can always perform the same actions as an Benutzer.
     A Webmaster can always perform the same actions as an Redakteur.
     A Webmaster can always perform the same actions as an Korrektor.
-    A Webmaster can always perform the same actions as an Internetbenutzer.    
+    A Webmaster can always perform the same actions as an Internetbenutzer.
     A Webmaster can always view any content.
     A Webmaster can always view inactive objects.
     A Webmaster can always manage security.
     A Webmaster can always manage portlets.
+    A Webmaster can always add teaser link.
 
     A System Administrator can always perform the same actions as a Webmaster.
     A System Administrator can always edit any content.
@@ -60,7 +61,7 @@ Status Intern:
     A Redakteur can einreichen.
     A Korrektor can intern publizieren.
     A Korrektor can einreichen.
-    
+
 Status Extern:
     A Benutzer can view this content.
     A Benutzer can add new content.

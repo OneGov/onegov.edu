@@ -4,6 +4,9 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
+- Update workflows for new contentpage teaser feature.
+  [jone]
+
 - Update workflows for Plone 4.3.4.
   [jone]
 

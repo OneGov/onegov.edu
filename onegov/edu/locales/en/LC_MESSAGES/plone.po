@@ -12,130 +12,130 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 
 msgid "onegov_edu_intranet_workflow--ROLE--Anonymous"
-msgstr ""
+msgstr "Internetbenutzer"
 
 msgid "onegov_edu_intranet_workflow--ROLE--Contributor"
-msgstr ""
+msgstr "Benutzer"
 
 msgid "onegov_edu_intranet_workflow--ROLE--Editor"
-msgstr ""
+msgstr "Redakteur"
 
 msgid "onegov_edu_intranet_workflow--ROLE--Manager"
-msgstr ""
+msgstr "System Administrator"
 
 msgid "onegov_edu_intranet_workflow--ROLE--Owner"
-msgstr ""
+msgstr "Ersteller"
 
 msgid "onegov_edu_intranet_workflow--ROLE--Reader"
-msgstr ""
+msgstr "Gast"
 
 msgid "onegov_edu_intranet_workflow--ROLE--Reviewer"
-msgstr ""
+msgstr "Korrektor"
 
 msgid "onegov_edu_intranet_workflow--ROLE--Site Administrator"
-msgstr ""
+msgstr "Webmaster"
 
 msgid "onegov_edu_intranet_workflow--STATUS--eingereicht"
-msgstr ""
+msgstr "Eingereicht"
 
 msgid "onegov_edu_intranet_workflow--STATUS--extern"
-msgstr ""
+msgstr "Extern"
 
 msgid "onegov_edu_intranet_workflow--STATUS--intern"
-msgstr ""
+msgstr "Intern"
 
 msgid "onegov_edu_intranet_workflow--TRANSITION--einreichen--intern_eingereicht"
-msgstr ""
+msgstr "einreichen"
 
 msgid "onegov_edu_intranet_workflow--TRANSITION--intern-publizieren--eingereicht_extern"
-msgstr ""
+msgstr "intern publizieren"
 
 msgid "onegov_edu_intranet_workflow--TRANSITION--intern-publizieren--intern_extern"
-msgstr ""
+msgstr "intern publizieren"
 
 msgid "onegov_edu_intranet_workflow--TRANSITION--zuruckweisen--eingereicht_intern"
-msgstr ""
+msgstr "Zurückweisen"
 
 msgid "onegov_edu_intranet_workflow--TRANSITION--zuruckweisen--extern_intern"
-msgstr ""
+msgstr "zurückweisen"
 
 msgid "onegov_edu_intranet_workflow--TRANSITION--zuruckziehen--eingereicht_intern"
-msgstr ""
+msgstr "zurückziehen"
 
 msgid "onegov_edu_intranet_workflow--TRANSITION--zuruckziehen--extern_intern"
-msgstr ""
+msgstr "zurückziehen"
 
 msgid "onegov_edu_workflow--ROLE--Anonymous"
-msgstr ""
+msgstr "Internetbenutzer"
 
 msgid "onegov_edu_workflow--ROLE--Contributor"
-msgstr ""
+msgstr "Benutzer"
 
 msgid "onegov_edu_workflow--ROLE--Editor"
-msgstr ""
+msgstr "Redakteur"
 
 msgid "onegov_edu_workflow--ROLE--Manager"
-msgstr ""
+msgstr "System Administrator"
 
 msgid "onegov_edu_workflow--ROLE--Owner"
-msgstr ""
+msgstr "Ersteller"
 
 msgid "onegov_edu_workflow--ROLE--Reader"
-msgstr ""
+msgstr "Gast"
 
 msgid "onegov_edu_workflow--ROLE--Reviewer"
-msgstr ""
+msgstr "Korrektor"
 
 msgid "onegov_edu_workflow--ROLE--Site Administrator"
-msgstr ""
+msgstr "Webmaster"
 
 msgid "onegov_edu_workflow--STATUS--eingereicht"
-msgstr ""
+msgstr "Eingereicht"
 
 msgid "onegov_edu_workflow--STATUS--extern"
-msgstr ""
+msgstr "Extern"
 
 msgid "onegov_edu_workflow--STATUS--intern"
-msgstr ""
+msgstr "Intern"
 
 msgid "onegov_edu_workflow--STATUS--publiziert"
-msgstr ""
+msgstr "Publiziert"
 
 msgid "onegov_edu_workflow--TRANSITION--einreichen--extern_eingereicht"
-msgstr ""
+msgstr "einreichen"
 
 msgid "onegov_edu_workflow--TRANSITION--einreichen--intern_eingereicht"
-msgstr ""
+msgstr "einreichen"
 
 msgid "onegov_edu_workflow--TRANSITION--intern-publizieren--eingereicht_extern"
-msgstr ""
+msgstr "intern publizieren"
 
 msgid "onegov_edu_workflow--TRANSITION--intern-publizieren--intern_extern"
-msgstr ""
+msgstr "intern publizieren"
 
 msgid "onegov_edu_workflow--TRANSITION--publizieren--eingereicht_publiziert"
-msgstr ""
+msgstr "publizieren"
 
 msgid "onegov_edu_workflow--TRANSITION--publizieren--extern_publiziert"
-msgstr ""
+msgstr "publizieren"
 
 msgid "onegov_edu_workflow--TRANSITION--publizieren--intern_publiziert"
-msgstr ""
+msgstr "publizieren"
 
 msgid "onegov_edu_workflow--TRANSITION--zuruckweisen--eingereicht_intern"
-msgstr ""
+msgstr "Zurückweisen"
 
 msgid "onegov_edu_workflow--TRANSITION--zuruckweisen--extern_intern"
-msgstr ""
+msgstr "zurückweisen"
 
 msgid "onegov_edu_workflow--TRANSITION--zuruckweisen--publiziert_intern"
-msgstr ""
+msgstr "zurückweisen"
 
 msgid "onegov_edu_workflow--TRANSITION--zuruckziehen--eingereicht_intern"
-msgstr ""
+msgstr "zurückziehen"
 
 msgid "onegov_edu_workflow--TRANSITION--zuruckziehen--extern_intern"
-msgstr ""
+msgstr "zurückziehen"
 
 msgid "onegov_edu_workflow--TRANSITION--zuruckziehen--publiziert_intern"
-msgstr ""
+msgstr "zurückziehen"

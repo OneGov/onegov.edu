@@ -47,6 +47,7 @@ General:
     A Webmaster can always view inactive objects.
     A Webmaster can always manage security.
     A Webmaster can always manage portlets.
+    A Webmaster can always add teaser link.
 
     A System Administrator can always perform the same actions as a Webmaster.
     A System Administrator can always edit any content.
@@ -115,4 +116,3 @@ Status Publiziert:
     A Ersteller can zurückziehen.
     A Redakteur can zurückziehen.
     A Korrektor can zurückziehen.
-
