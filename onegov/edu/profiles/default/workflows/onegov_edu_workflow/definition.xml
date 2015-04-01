@@ -64,8 +64,6 @@
   <permission>iterate : Check out content</permission>
   <permission>plone.app.collection: Add Collection</permission>
   <permission>plonetheme.onegov: Manage Styles</permission>
-  <permission>simplelayout.types.common: Add Page</permission>
-  <permission>simplelayout.types.common: Add Paragraph</permission>
   <state state_id="onegov_edu_workflow--STATUS--eingereicht" title="Eingereicht">
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--intern-publizieren--eingereicht_extern"/>
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--publizieren--eingereicht_publiziert"/>
@@ -283,12 +281,6 @@
     </permission-map>
     <permission-map name="plone.app.collection: Add Collection" acquired="False"/>
     <permission-map name="plonetheme.onegov: Manage Styles" acquired="False"/>
-    <permission-map name="simplelayout.types.common: Add Page" acquired="False"/>
-    <permission-map name="simplelayout.types.common: Add Paragraph" acquired="False">
-      <permission-role>Manager</permission-role>
-      <permission-role>Reviewer</permission-role>
-      <permission-role>Site Administrator</permission-role>
-    </permission-map>
   </state>
   <state state_id="onegov_edu_workflow--STATUS--extern" title="Extern">
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--zuruckweisen--extern_intern"/>
@@ -699,20 +691,6 @@
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="plonetheme.onegov: Manage Styles" acquired="False"/>
-    <permission-map name="simplelayout.types.common: Add Page" acquired="False">
-      <permission-role>Contributor</permission-role>
-      <permission-role>Editor</permission-role>
-      <permission-role>Manager</permission-role>
-      <permission-role>Owner</permission-role>
-      <permission-role>Site Administrator</permission-role>
-    </permission-map>
-    <permission-map name="simplelayout.types.common: Add Paragraph" acquired="False">
-      <permission-role>Editor</permission-role>
-      <permission-role>Manager</permission-role>
-      <permission-role>Owner</permission-role>
-      <permission-role>Reviewer</permission-role>
-      <permission-role>Site Administrator</permission-role>
-    </permission-map>
   </state>
   <state state_id="onegov_edu_workflow--STATUS--intern" title="Intern">
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--intern-publizieren--intern_extern"/>
@@ -1066,18 +1044,6 @@
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="plonetheme.onegov: Manage Styles" acquired="False"/>
-    <permission-map name="simplelayout.types.common: Add Page" acquired="False">
-      <permission-role>Editor</permission-role>
-      <permission-role>Manager</permission-role>
-      <permission-role>Owner</permission-role>
-      <permission-role>Site Administrator</permission-role>
-    </permission-map>
-    <permission-map name="simplelayout.types.common: Add Paragraph" acquired="False">
-      <permission-role>Editor</permission-role>
-      <permission-role>Manager</permission-role>
-      <permission-role>Owner</permission-role>
-      <permission-role>Site Administrator</permission-role>
-    </permission-map>
   </state>
   <state state_id="onegov_edu_workflow--STATUS--publiziert" title="Publiziert">
     <exit-transition transition_id="onegov_edu_workflow--TRANSITION--zuruckweisen--publiziert_intern"/>
@@ -1351,14 +1317,6 @@
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="plonetheme.onegov: Manage Styles" acquired="False"/>
-    <permission-map name="simplelayout.types.common: Add Page" acquired="False">
-      <permission-role>Editor</permission-role>
-      <permission-role>Manager</permission-role>
-      <permission-role>Site Administrator</permission-role>
-    </permission-map>
-    <permission-map name="simplelayout.types.common: Add Paragraph" acquired="False">
-      <permission-role>Manager</permission-role>
-    </permission-map>
   </state>
   <transition new_state="onegov_edu_workflow--STATUS--intern" title="Zurückweisen" transition_id="onegov_edu_workflow--TRANSITION--zuruckweisen--eingereicht_intern" after_script="" before_script="" trigger="USER">
     <action category="workflow" icon="" url="%(content_url)s/content_status_modify?workflow_action=onegov_edu_workflow--TRANSITION--zuruckweisen--eingereicht_intern">Zurückweisen</action>
@@ -1473,39 +1431,39 @@
   <variable variable_id="action" for_catalog="False" for_status="True" update_always="True">
     <description>Previous transition</description>
     <default>
-      <expression>transition/getId|nothing</expression>
+        <expression>transition/getId|nothing</expression>
     </default>
     <guard/>
-  </variable>
+</variable>
   <variable variable_id="actor" for_catalog="False" for_status="True" update_always="True">
-    <description>The ID of the user who performed the previous transition</description>
+<description>The ID of the user who performed the previous transition</description>
     <default>
-      <expression>user/getId</expression>
+        <expression>user/getId</expression>
     </default>
     <guard/>
-  </variable>
+</variable>
   <variable variable_id="comments" for_catalog="False" for_status="True" update_always="True">
     <description>Comment about the last transition</description>
     <default>
-      <expression>python:state_change.kwargs.get('comment', '')</expression>
+        <expression>python:state_change.kwargs.get('comment', '')</expression>
     </default>
     <guard/>
-  </variable>
+</variable>
   <variable variable_id="review_history" for_catalog="False" for_status="False" update_always="False">
     <description>Provides access to workflow history</description>
     <default>
-      <expression>state_change/getHistory</expression>
+        <expression>state_change/getHistory</expression>
     </default>
     <guard>
-      <guard-permission>Request review</guard-permission>
-      <guard-permission>Review portal content</guard-permission>
+        <guard-permission>Request review</guard-permission>
+        <guard-permission>Review portal content</guard-permission>
     </guard>
-  </variable>
+</variable>
   <variable variable_id="time" for_catalog="False" for_status="True" update_always="True">
     <description>When the previous transition was performed</description>
     <default>
-      <expression>state_change/getDateTime</expression>
+        <expression>state_change/getDateTime</expression>
     </default>
     <guard/>
-  </variable>
+</variable>
 </dc-workflow>
