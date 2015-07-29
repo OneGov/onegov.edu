@@ -37,7 +37,7 @@ setup(name='onegov.edu',
       install_requires=[
         'Plone',
         'Products.CMFPlacefulWorkflow',
-        'Products.PloneFormGen',
+        'Products.PloneFormGen < 1.8.0.a',
         'ftw.calendar',
         'ftw.contentpage >= 1.11.0',
         'ftw.inflator',
