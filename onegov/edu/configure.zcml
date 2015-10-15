@@ -25,6 +25,14 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="onegov.edu:uninstall"
+        directory="profiles/uninstall"
+        description=""
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
      <include file="inflator.zcml" />
      <include file="lawgiver.zcml" />
      <include package=".viewlets" />
